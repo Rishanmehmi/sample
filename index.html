@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="min-width:900px, initial-scale=1.0">
+    <title>Document</title>
+     
+    <style>
+        body
+        {
+            overflow-x: hidden;
+        }
+        @font-face {
+            font-family:'Roboto' ;
+            src: url(fonts/Roboto-Regular.ttf);
+            font-weight: normal;
+        }
+        @font-face {
+            font-family:'Roboto' ;
+            src: url(fonts/Roboto-Thin.ttf);
+            font-weight: lighter;
+        }
+        @font-face {
+            font-family:'Roboto' ;
+            src: url(fonts/Roboto-Medium.ttf);
+            font-weight:300 ;
+        }
+        @font-face {
+            font-family:'Roboto' ;
+            src: url(fonts/Roboto-Light.ttf);
+            font-weight: 200;
+        }
+        @font-face {
+            font-family: 'roboto';
+            src: url(fonts/Roboto-Bold.ttf);
+            font-weight: bold;
+        }
+        @font-face {
+            font-family:'Roboto' ;
+            src: url(fonts/Roboto-Black.ttf);
+            font-weight: bolder;
+        }
+       
+        .intro
+        {
+           height: 865px;
+           width: 110%;
+            margin: 0%;
+            background-image: url(perfect-1.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0%;
+            display: block;
+            margin-right: -2px;
+            scroll-margin: none;
+            margin-top: -30px;
+            margin-left: -30px;
+        }
+        .intro > img
+        {
+            height: 100px;
+            width: 100px;
+            margin-left: 15%;
+            margin-top: 30px;
+        }
+       .ala
+        {
+            font-size: 92%;  /*responsive*/
+            text-decoration: 2px solid underline;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bolder;
+            margin: 0%;
+            border: none;
+            padding: 0%;
+            
+        }
+       
+     
+       
+        .whiteSpace
+        {
+            height: 100px;
+            width: 110%;
+            position: relative;
+        }
+       
+        .text1
+        {
+            font-size: 24.5px;
+            font-weight: bolder;
+            color: rgb(138, 138, 138);
+            margin-top: 20px;
+            position: absolute;
+            letter-spacing: none;
+        }
+        .text2
+        {
+            font-size: 27px;
+            font-weight: bolder;
+            color: rgb(65, 79, 107);
+            margin-top: 40px;
+            position: absolute;
+            letter-spacing: 0.2px;
+        }
+        .mountainie
+        {
+            
+           height: 865px;
+           width: 110%;
+            margin: 0%;
+            background-image: url(imgie.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            top: 0%;
+            display: block;
+            margin-right: -2px;
+            margin-left: -12px;
+            scroll-margin: none;
+            margin-top: 30px;
+        }
+        .txt
+        {
+            color: rgb(115, 130, 156);
+            font-size: 145px;
+            font-family:sans-serif;
+            font-weight: bolder;
+            position: absolute;
+            line-height: 3cm;
+        }
+        .txt2
+        {
+            color: rgb(65, 79, 107);
+            font-size: 35px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            position: absolute;
+        }
+        p
+        {
+            color: rgb(0, 0, 0);
+            text-align: left;
+            position: absolute;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            left: 25.5%;
+            top: 170px;
+            font-weight: lighter;
+            width: 45%;
+        }
+        .slider
+        {
+            background-color: (rgb68, 81, 105);
+            opacity: 0.7;
+            height: 200px;
+            width: 110%;
+            position: absolute;
+            top:80% ;
+            display: inline-block;
+        }
+        .imig 
+        {
+            height: 125px;
+            width: 210px;
+            position: absolute;
+            top: 82.3%;
+            opacity: 1;
+        }
+        .imig:hover 
+        {
+            opacity: 2;
+        }
+        .blankspace
+        {
+            height: 150px; ;
+            width:110% ;
+            position: static;
+
+        }
+        .navie
+        {
+            height:40px ;
+            width: 110%;
+            margin-left: -10px;
+            margin-right: -10px;
+            position: relative;
+            background-color: rgb(65, 79, 107);
+            top: 170px;
+        }
+        .navie > a
+        {
+            height: 50px;
+            width: auto;
+            text-decoration: underline;
+            color: rgb(176, 180, 190);
+            font-weight: bolder;
+            font-size: 35px;
+           margin-top: 25px;
+            background-color: rgb(65, 79, 107);
+        }
+        .navie > a:active
+        {
+            background-color: rgb(176, 180, 190);
+            color: rgb(65, 79, 107);
+        }
+        .navie > a:hover
+        {
+            background-color: rgb(176, 180, 190);
+            color: rgb(65, 79, 107);
+        }
+        .flyisnewaddiction
+        {
+            height: 650px;
+            width: 110%;
+            position: relative;
+            background-image:url(clasis.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-top: 80px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .schedule
+        {
+            height: 250px;
+            width: 375px;
+            background-color: rgb(242, 244, 247);
+            opacity: 0.8;
+            position: absolute;
+            margin-left:300px ;
+            margin-top: 250px;
+        }
+        .schedule1
+        {
+            height: 200px; ;
+            width: 275px;
+            background-color: inherit;
+            color:rgb(0, 0, 0);
+            position: absolute;
+           
+        }
+        .thatisus
+        {
+            height: 100px;
+            width: 110%;
+            background-color:rgb(65, 79, 107) ;
+            color: rgb(99, 118, 157);
+            position: relative;
+            bottom: 0%;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        .footerlogo
+        {
+            color: rgb(65, 79, 107);
+            font-size: 35px;
+            font-family: sans-serif;
+            font-weight: bolder;
+            position: absolute;
+        }
+        .counter:hover
+        {
+            border: 6px solid rgb(31, 33, 37);
+            box-shadow: 6px rgb(23, 131, 231) inset;
+        }
+        .counter:active
+        {
+            border: 6px solid rgb(160, 187, 247);
+            color: rgb(91, 114, 214);
+        }
+        .counter:visited
+        {
+            border: 6px solid rgb(160, 187, 247);
+        }
+       
+    </style>
+  
+</head>
+<body>
+    <div class="intro">
+        <img src="logo1.jpg" alt="Welcome" style="height:8% ;width:8% ;border-radius: 125px;"  >
+        <a href="#" class="ala" style="margin-left: 45%;margin-top:-20px ;">01.HISTORY</a>
+        <a href="#" class="ala" style="margin-left: 2%;">02.TEAM</a>
+    </div>
+    <div class="whiteSpace">
+            <img src="logo-removebg-preview.png" alt="Let'z GO" style="height: 100px;
+            width: 100px;
+            margin-left: 15%;
+            " > <span class="text1" >&nbsp; LOS ANGELES</span><span class="text2"  > &nbsp; MOUNTAINS</span>
+            <a href="#" style="margin-left: 45.5%;margin-top:35px ;color: rgb(65, 79, 107);position: absolute;">01.HISTORY</a>
+            <a href="#" style="margin-left: 58%; color: rgb(65, 79, 107);position: absolute;margin-top:35px ;">02.TEAM</a>
+    </div>
+    <script>
+        function slider(input)
+        {
+            if(input ===1)
+          {
+            document.getElementById('rexd').style.backgroundImage = "url('accomplishment-action-adult-adventure-372098.jpg')";
+          }
+          if(input===2)
+          {
+              document.getElementById('rexd').style.backgroundImage = "url('downloads/slider2.jpg')";
+          }
+          if(input===3)
+          {
+              document.getElementById('rexd').style.backgroundImage = "url('imgie.jpg')";
+          }
+        }
+    </script>
+    <div class="mountainie" id="rexd">
+        <span class="txt" style="margin-top: 1.5cm;margin-left: 20.5%;z-index: 1;position: absolute;">01.</span>
+        <span class="txt2" style="margin-top:100px ;margin-left: 32%;z-index: 1;">HISTORY</span>
+        <p contenteditable="">Lorem ipsum</p>
+        <div class="slider"></div>
+               <img src="accomplishment-action-adult-adventure-372098.jpg" alt="" id="pic1" class="imig" style="display: block;margin-left: 25.5%;z-index: 1;box-shadow: grey offset 3px;" onclick="slider(1);">
+                <img src="downloads/slider2.jpg" alt="" id="pic2" style="display: block;margin-left: 40%;z-index: 1;" class="imig" onclick="slider(2);">
+                <img src="imgie.jpg" alt="" id="pic3" class="imig" style="display: block;margin-left: 54.5%;z-index: 1;" onclick="slider(3);" >
+                <div class="X" style="height: 175px;width: 110%;position: absolute;bottom: 0%;opacity: 0.8;display: block;z-index: 0;background-color: rgb(65, 79, 107);" ></div>
+                <div class="counter" style="height: 0px;width: 0px;border: 6px solid white;border-radius: 14px;position: absolute;bottom:0.7%;margin-left: 41.2%;" onclick="slider(1);" onmouseenter="document.getElementById('counter1').style.border = '6px solid rgb(91, 114, 214)'" onmouseleave="document.getElementById('counter1').style.border = '6px solid white'" id="counter1"></div>
+                <div class="counter" style="height: 0px;width: 0px;border: 6px solid white;border-radius: 14px;position: absolute;bottom:0.7%;margin-left: 46.2%;" onclick="slider(2);" onmouseenter="document.getElementById('counter2').style.border = '6px solid rgb(91, 114, 214)'" onmouseleave="document.getElementById('counter2').style.border = '6px solid white'"  id="counter2"></div>
+                <div class="counter" style="height: 0px;width: 0px;border: 6px solid white;border-radius: 14px;position: absolute;bottom:0.7%;margin-left: 51.2%;" onclick="slider(3);" onmouseenter="document.getElementById('counter3').style.border = '6px solid rgb(91, 114, 214)'" onmouseleave="document.getElementById('counter3').style.border = '6px solid white'" id="counter3" ></div>
+    </div>
+      <div class="blankSpace">
+        <span class="txt" style="margin-top: 1.5cm;margin-left: 20.5%;z-index: 1;position: absolute;">02.</span>
+        <span class="txt2" style="margin-top:100px ;margin-left: 33%;z-index: 1;">CLIMB</span>
+         <p contenteditable="" style="color: rgb(0, 0, 0);display: block;position:absolute;margin-left:240px;margin-top: 1760px;">
+            Cras Scelerisque idvksnakvnasdvcmasdkncvklsdbhcmnasdckljaskdbasdlcmasklcnksjbncuisfjnvlasncvjsdncaklsdc
+        </p>
+      </div> <br>
+      <div class="navie" id="nolo">
+         <a href="#nolo" style="margin-left: 150px;">MOUNTAIN1</a><a href="#" style="margin-left: 30px;">MOUNTAIN2</a>
+      </div> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="flyisnewaddiction" >
+        <div class="schedule">
+            <div class="schedule1">
+                <span class="txt2" style="margin-top: 25px;margin-left: 25px;">SCHEDULE</span>
+                <pre style="color: rgb(0, 0, 0);font: size 14px; ;font-family:'Roboto' ;font-weight:lighter;">
+                    
+                    
+                    
+                    
+                    25/nov/2016   vericulum vieerra
+                    28/nov/2016   vericulum vieerra
+
+                    18/dec/2017   vericulum vieerra
+
+                    07/jan/2017   vericulum vieerra
+                </pre>      
+            </div>
+        </div>
+      </div>  
+      <div class="thatisus">
+       <img src="footerimg.jpg" alt="" style="height: 100px;width: 100px;margin-left: 200px;"> <span class="text1" style="color: rgb(99, 118, 157);margin-top: 30px;" >&nbsp; LOS ANGELES</span><span class="text2" style="color: rgb(99, 118, 157);margin-top: 50px;" > &nbsp; MOUNTAINS</span>
+        <span class="text1" style="color:rgb(99, 118, 157) ;margin-top:40px ;margin-left: 400px;">&copy; COPYRIGHT 2016. ALL RIGHTS RESERVED</span>
+      </div>  
+</body>
+</html>
